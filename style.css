@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     margin: 4vh auto 2vh auto;
+    z-index: 99;
 }
 
 span {
@@ -37,6 +38,13 @@ span {
     border-radius: 2vh;
     margin: 1vh auto 1vh auto;
     font-size: 1.1em;
+    z-index: 99;
+}
+
+#reset:hover {
+    background-color: #00adb5;
+    color: #0e1514;
+    cursor: pointer;
 }
 
 #main {
@@ -87,10 +95,105 @@ span {
     align-items: center;
     font-size: 2em;
     min-width: 250px;
+    z-index: 99;
 }
 
-#reset:hover {
-    background-color: #00adb5;
-    color: #0e1514;
-    cursor: pointer;
+.win-hide {
+    height: 100vh;
+    width: 100%;
+    z-index: 50;
+    background-color: #0e1514;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.win-show {
+    height: 100vh;
+    width: 100%;
+    z-index: 50;
+    background-color: #0e1514;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+}
+
+@media(max-width:750px) {
+    span {
+        color: #00adb5;
+        font-size: 8vh;
+    }
+
+    #reset {
+        background-color: #0e1514;
+        color: #00adb5;
+        border: 3px solid #00adb5;
+        height: 5vh;
+        width: 10vh;
+        border-radius: 2vh;
+        margin: 1vh auto 1vh auto;
+        font-size: 0.8em;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #game {
+        height: 29vh;
+        width: 29vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0vh 0vh;
+    }
+
+    .sq {
+        height: 9vh;
+        width: 9vh;
+        border-radius: 2vh;
+        /* background-color: #00fff5; */
+        background-color: #00adb5;
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        cursor: pointer;
+    }
+
+    #msg {
+        margin: 2vh auto 4vh auto;
+        background-color: #00adb5;
+        height: 10vh;
+        width: 15vw;
+        border-radius: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+}
+
+@media(max-width:540px) {
+    span {
+        color: #00adb5;
+        font-size: 6vh;
+    }
+    
+    #reset {
+        background-color: #0e1514;
+        color: #00adb5;
+        border: 3px solid #00adb5;
+        height: 5vh;
+        width: 10vh;
+        border-radius: 2vh;
+        margin: 1vh auto 1vh auto;
+        font-size: 0.8em;
+    }
 }

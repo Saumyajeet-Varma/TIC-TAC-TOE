@@ -1,7 +1,8 @@
 let sqs = document.querySelectorAll(".sq");
 let msg = document.querySelector("#text");
 let reset = document.querySelector("#reset");
-let gifs = document.querySelectorAll("img")
+let gifs = document.querySelectorAll("img");
+let popup = document.querySelector("#win");
 
 turn = "O";
 game = "not-over";
@@ -54,6 +55,7 @@ const showWinner = (val) => {
     gifs.forEach((gif) => {
         gif.classList.remove("hide");
     })
+    popup.classList.replace("win-hide", "win-show");
 }
 
 const checkTie = () => {
@@ -82,4 +84,5 @@ reset.addEventListener("click", () => {
         gif.classList.add("hide");
     })
     msg.innerText = "O turns";
+    popup.classList.replace("win-show", "win-hide");
 });
