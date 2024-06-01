@@ -6,10 +6,15 @@ A classic Tic Tac Toe game implemented using HTML, CSS, and JavaScript. This pro
 **Simple UI:** Easy-to-use interface with a modern and clean design.<br>
 **Real-time Feedback:** Immediate indication of wins, losses, and draws.<br>
 
+# Demo
+<a href="https://saumyajeet-varma.github.io/TIC-TAC-TOE/" style="text-decoration: none">`Demo`</a> - Link to the live version of TIC_TAC_TOE.
+
 # Technology used
-**HTML**: Structure and layout of the game.<br>
-**CSS**: Styling and responsive design.<br>
-**JavaScript**: Game logic and interactivity.
+<p>
+  <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" alt="HTML" />
+  <img src="https://img.icons8.com/color/70/000000/css3.png" alt="CSS" />
+  <img src="https://img.icons8.com/?size=70&id=PXTY4q2Sq2lG&format=png&color=000000" alt="js" />
+</p>
 
 # Installation
 1. `clone` the repository.
